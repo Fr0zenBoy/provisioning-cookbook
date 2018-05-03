@@ -1,4 +1,4 @@
-include_recipe 'deploy'
+app = shearch(:aws_deploy_app).first
 
 node[:deploy].each do |application, deploy|
 
@@ -40,5 +40,3 @@ node[:deploy].each do |application, deploy|
     end
 
 end
-
-
