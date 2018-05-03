@@ -1,4 +1,5 @@
 app = shearch(:aws_deploy_app).first
+    app_path = "/srv/#{app['shortname']}"
 
 node[:deploy].each do |application, deploy|
 
